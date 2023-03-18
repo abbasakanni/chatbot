@@ -53,7 +53,7 @@ io.on("connection", (socket) => {
       userName = message;
       socket.emit(
         "bot-message",
-        `Welcome to the ChatBot, ${userName}! Place an order\n1. Typehere\n99. Typehere\n98. Typehere\n97. Typehere\n0. Cancel order`
+        `Welcome to the ChatBot, ${userName}! Place an order\n1. Checkout order\n99. See order history\n98. See current order\n97. Cancel order\n0`
       );
     } else {
       switch (message) {
